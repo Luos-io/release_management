@@ -1,0 +1,16 @@
+name: 'Get Package Semver'
+description: 'Give current and next package version based on our internal process'
+author: 'Luos'
+inputs:
+  type:
+    description: 'Type of package update. Example: major, minor, patch, rc'
+    required: false
+outputs:
+  version:
+    description: 'The new version of the package'
+runs:
+  # using: 'docker' # Next Realease of Nektos/Act will allow us to use 'node16'
+  # image: 'Dockerfile'
+  using: 'node12'
+  main: './dist/index.js'
+  post-if: success()
