@@ -72,4 +72,4 @@ export function retrieveVersion() {
   }
 }
 
-retrievePackageVersion();
+retrieveVersion();

@@ -91,4 +91,4 @@ function retrieveVersion() {
     }
 }
 exports.retrieveVersion = retrieveVersion;
-retrievePackageVersion();
+retrieveVersion();
