@@ -9,8 +9,5 @@ outputs:
   version:
     description: 'The new version of the package'
 runs:
-  # using: 'docker' # Next Realease of Nektos/Act will allow us to use 'node16'
-  # image: 'Dockerfile'
   using: 'node12'
   main: './dist/index.js'
-  post-if: success()
